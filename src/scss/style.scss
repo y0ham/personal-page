@@ -30,7 +30,7 @@ body {
     align-items: center;
     padding: 50px 0;
     height: inherit;
-    min-height: 550px;
+    min-height: 800px;
 }
 
 .background {
@@ -64,7 +64,7 @@ a {
 .title {
     position: relative;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 7px;
     padding-bottom: 15px;
 }
 
@@ -72,12 +72,9 @@ a {
     letter-spacing: 3px;
 }
 
-.programmer {
-    path {
-        fill: $font_color;
-    }
-
-    padding-bottom: 40px;
+.avatar {
+    width: 200px;
+    padding-bottom: 120px;
 }
 
 .links {
@@ -104,8 +101,15 @@ a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .nickname {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
     .title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .subtitle {
@@ -116,7 +120,7 @@ a {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .title {
-        font-size: 36px;
+        font-size: 20px;
     }
 
     .subtitle {
@@ -127,7 +131,7 @@ a {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .title {
-        font-size: 44px;
+        font-size: 30px;
     }
 
     .subtitle {
@@ -148,6 +152,10 @@ a {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .avatar {
+        width: 250px;
+    }
+
     .title {
         font-size: 60px;
     }

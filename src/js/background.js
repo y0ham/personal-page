@@ -43,7 +43,7 @@ geometry.setAttribute('scale', new BufferAttribute(scales, 1));
 
 const material = new ShaderMaterial({
     uniforms: {
-        color: {value: new Color(0x626262)},
+        color: {value: new Color(0x484848)},
     },
     vertexShader: `
 attribute float scale;
@@ -72,7 +72,7 @@ const renderer = new WebGLRenderer({
     antialias: true,
     canvas: document.getElementById('background__canvas')
 });
-renderer.setClearColor(0x151515, 1);
+renderer.setClearColor(0x0e0e0e, 1);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
